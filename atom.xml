@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>博客</title>
+  
+  <subtitle>尧无郁</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-02-22T09:18:19.513Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>QLC-LMX</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试博文</title>
+    <link href="http://yoursite.com/2019/02/22/test/"/>
+    <id>http://yoursite.com/2019/02/22/test/</id>
+    <published>2019-02-22T09:14:23.000Z</published>
+    <updated>2019-02-22T09:18:19.513Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
