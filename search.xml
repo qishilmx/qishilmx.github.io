@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[树莓派安装3.5寸屏幕驱动]]></title>
+    <url>%2F2019%2F02%2F26%2F%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%853-5%E5%AF%B8%E5%B1%8F%E5%B9%95%E9%A9%B1%E5%8A%A8%2F</url>
+    <content type="text"><![CDATA[下载屏幕驱动或执行clonelink1执行```cd LCD-show/执行./LCD35-show```123**注意**执行```apt-get upgrade```会导致LCD无法正常工作,需要编辑SD卡中的config.txt文件,删除其中的dtoverlay=ads7846## 设置显示方向执行```cd LCD-show/执行sudo ./LCD35-show lite XX 可选 0,90,180,270,分别表示旋转相应的度数.]]></content>
+      <categories>
+        <category>树莓派教程</category>
+      </categories>
+      <tags>
+        <tag>树莓派</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[树莓派显示中文]]></title>
+    <url>%2F2019%2F02%2F26%2F%E6%A0%91%E8%8E%93%E6%B4%BE%E6%98%BE%E7%A4%BA%E4%B8%AD%E6%96%87%2F</url>
+    <content type="text"><![CDATA[执行sudo apt-get install ttf-wqy-zenhei执行sudo raspi-config选择第四项,然后选择第一项,按方向键下找到zh-CN按空格选中,然后确认,退出配置界&gt;面,然后重启就可以了.]]></content>
+      <categories>
+        <category>树莓派教程</category>
+      </categories>
+      <tags>
+        <tag>树莓派</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[树莓派3B+设置静态IP]]></title>
     <url>%2F2019%2F02%2F25%2F%E6%A0%91%E8%8E%93%E6%B4%BE3B-%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81IP%2F</url>
     <content type="text"><![CDATA[执行sudo vim /etc/dhcpcd.conf在文件末尾添加#有线静态ip设置interface eth0static ip_address=192.168.0.53/24 #IPV4的地址static ip6_address=fd51:42f8:caae:d92e::ff/64 #IPV6的地址static routers=192.168.0.1 #网关static domain_name_servers=192.168.0.1 8.8.8.8 fd51:42f8:caae:d92e::1 #DNS#无线静态IP设置interface wlan0static ip_address=192.168.0.53/24 #PV4的地址static ip6_address=fd51:42f8:caae:d92e::ff/64 #IPV6的地址static routers=192.168.0.1 #网关static domain_name_servers=192.168.0.1 8.8.8.8 fd51:42f8:caae:d92e::1 #DNS]]></content>
