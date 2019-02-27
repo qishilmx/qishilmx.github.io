@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[树莓派安装3.5寸屏幕驱动]]></title>
-    <url>%2Fcjsna5i3r00037gfdswup52ig%2F</url>
+    <url>%2Fcjsnbu8430002h8fde14jsjjn%2F</url>
     <content type="text"><![CDATA[下载屏幕驱动或执行1Git clone https://github.com/qishilmx/Warehouse.git执行12cd LCD-show/sudo ./LCD35-show注意:执行123执行apt-get upgrade会导致LCD无法正常工作需要编辑SD卡中的config.txt文件删除其中的dtoverlay=ads7846设置显示方向执行123cd LCD-show/sudo ./LCD35-show lite XX 可选 0,90,180,270,分别表示旋转相应的度数.]]></content>
       <categories>
         <category>树莓派教程</category>
@@ -13,7 +13,7 @@
   </entry>
   <entry>
     <title><![CDATA[树莓派显示中文]]></title>
-    <url>%2Fcjsna5i4100067gfdcdtrt5qv%2F</url>
+    <url>%2Fcjsnbu8bd000gh8fdbjfj565g%2F</url>
     <content type="text"><![CDATA[执行sudo apt-get install ttf-wqy-zenhei执行sudo raspi-config选择第四项,然后选择第一项,按方向键下找到zh-CN按空格选中,然后确认,退出配置界&gt;面,然后重启就可以了.]]></content>
       <categories>
         <category>树莓派教程</category>
@@ -24,7 +24,7 @@
   </entry>
   <entry>
     <title><![CDATA[树莓派3B+设置静态IP]]></title>
-    <url>%2Fcjsna5i3i00017gfdg0tv8wmx%2F</url>
+    <url>%2Fcjsnbu83y0001h8fdaisdjey7%2F</url>
     <content type="text"><![CDATA[执行1sudo vim /etc/dhcpcd.conf在文件末尾添加123456789101112#有线静态ip设置interface eth0static ip_address=192.168.0.53/24 #IPV4的地址static ip6_address=fd51:42f8:caae:d92e::ff/64 #IPV6的地址static routers=192.168.0.1 #网关static domain_name_servers=192.168.0.1 8.8.8.8 fd51:42f8:caae:d92e::1 #DNS#无线静态IP设置interface wlan0static ip_address=192.168.0.53/24 #PV4的地址static ip6_address=fd51:42f8:caae:d92e::ff/64 #IPV6的地址static routers=192.168.0.1 #网关static domain_name_servers=192.168.0.1 8.8.8.8 fd51:42f8:caae:d92e::1 #DNS]]></content>
       <categories>
         <category>树莓派教程</category>
@@ -35,7 +35,7 @@
   </entry>
   <entry>
     <title><![CDATA[树莓派安装系统及简单配置]]></title>
-    <url>%2Fcjsna5i4700077gfdrxx6r202%2F</url>
+    <url>%2Fcjsnbu8480005h8fd6zq44j3g%2F</url>
     <content type="text"><![CDATA[安装系统第一步下载系统先去官网下载系统,我下载的是Raspbian Stretch Lite版.第一个带桌面与推荐软件,第二个只带桌面,第三个是最简版.第二步格式化SD卡安装系统先下载SD卡格式化工具,然后解压打开软件,在电脑上插入SD,如下图显示,驱动器检测到了SD,驱动器要是空白的点一下旁边的更新,然后点击格式化,会弹出两次确认对话框,都点击确认,然后点击完成后退出软件就可以了.下载Win32DiskImager,点击箭头所指按键找到下载的系统(下载的是压缩包需要先解压),注意箭头指向的图标后面的驱动器要选对,然后点击Write,弹出的对话框点yes,等待完成就可以了.开启ssh上面我们已经把系统装到SD卡了,但是默认树莓派的ssh是未开启的,所以我们需要在SD的根目录下新建ssh文件.新建完ssh文件把卡插到树莓派就行了(第一次开机需要的时间会久一点),需要用网线连接树莓派与电脑,就可以通过putty操作树莓派了,主机名写箭头指向的就可以了,然后点击打开,弹出的对话框点是登录名写pi密码写raspberry简单配置树莓派执行sudo raspi-config进入到下图界面修改密码按方向键选中第一个Change User Password,按回车,根据提示新密码.设置开机自动连接WiFi选择第二项Network options,进入到下一个界面后选择第二个,先选择区域找到china后确认,根据提示输入WiFi名称与密码.扩展SD卡空间在选择第七项Advanced options,选中第一个按两次回车就OK了,修改设备名选择第二项Network options,选择第一项,根据提示修改设备名重启树莓派按Tab键选择Finish回车在命令行输入sudo reboot再次连接树莓派打开putty主机名那可以写你修改后的设备名.local也可以写树莓派连接WiFi后的地址(可以在路由器管理页面查看),注意,电脑与树莓派必须在同一WiFi下.]]></content>
       <categories>
         <category>树莓派教程</category>
