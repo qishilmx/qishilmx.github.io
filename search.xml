@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[HexoError]]></title>
+    <url>%2Fcjtao2efu0001o8fdd3v93sfd%2F</url>
+    <content type="text"><![CDATA[Hexo错误”expected end of comment, got end of file”参考文档使用 hexo g时报错123456789101112131415161718192021222324INFO Start processingFATAL Something&apos;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.htmlTemplate render error: Error: expected end of comment, got end of file at Object._prettifyError (/web/hexo/node_modules/nunjucks/src/lib.js:35:11) at Template.render (/web/hexo/node_modules/nunjucks/src/environment.js:526:21) at Environment.renderString (/web/hexo/node_modules/nunjucks/src/environment.js:364:17) at /web/hexo/node_modules/hexo/lib/extend/tag.js:66:9 at Promise._execute(/web/hexo/node_modules/bluebird/js/release/debuggability.js:303:9) at Promise._resolveFromExecutor (/web/hexo/node_modules/bluebird/js/release/promise.js:483:18) at new Promise (/web/hexo/node_modules/bluebird/js/release/promise.js:79:10) at Tag.render (/web/hexo/node_modules/hexo/lib/extend/tag.js:64:10) at Object.tagFilter [as onRenderEnd] (/web/hexo/node_modules/hexo/lib/hexo/post.js:266:16) at /web/hexo/node_modules/hexo/lib/hexo/render.js:65:19 at tryCatcher (/web/hexo/node_modules/bluebird/js/release/util.js:16:23) at Promise._settlePromiseFromHandler (/web/hexo/node_modules/bluebird/js/release/promise.js:512:31) at Promise._settlePromise (/web/hexo/node_modules/bluebird/js/release/promise.js:569:18) at Promise._settlePromise0 (/web/hexo/node_modules/bluebird/js/release/promise.js:614:10) at Promise._settlePromises (/web/hexo/node_modules/bluebird/js/release/promise.js:693:18) at Async._drainQueue (/web/hexo/node_modules/bluebird/js/release/async.js:133:16) at Async._drainQueues (/web/hexo/node_modules/bluebird/js/release/async.js:143:10) at Immediate.Async.drainQueues [as _onImmediate] (/web/hexo/node_modules/bluebird/js/release/async.js:17:14) at runCallback (timers.js:794:20) at tryOnImmediate (timers.js:752:5) at processImmediate [as _immediateCallback] (timers.js:729:5)原因及解决方案hexo 中 {# 属于保留字段，{# … {#之间的内容属于注释字段，而Markdown文档中刚好出现了这个字段 {# ，导致渲染失败。解决方案：把除代码块以外的 {# 改为 {# 即可解决。]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>HexoError</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[MarkdownHelp]]></title>
-    <url>%2Fcjtalcu6r000pqcfd25dgtfgn%2F</url>
+    <url>%2Fcjtao2en2000yo8fdpl4jxj40%2F</url>
     <content type="text"><![CDATA[引用文章1.快捷键快捷键功能Ctrl + B加粗Ctrl + I斜体Ctrl + Q引用Ctrl + L插入链接Ctrl + K插入代码Ctrl + G插入图片Ctrl + H提升标题Ctrl + O有序列表Ctrl + U无序列表Ctrl + R横线Ctrl + Z撤销Ctrl + Y重做2.基本语法2.1 字体设置斜体、粗体、删除线功能关键字样例效果斜体* * 或 _ _*斜体* 或 _斜体_斜体 或 _斜体_粗体** ****粗体**粗体倾斜加粗*** ******倾斜加粗***倾斜加粗删除线~~ ~~~~删除线~~删除线2.2 标题写法1功能关键字样例一级标题## 标题二级标题#### 标题三级标题###### 标题四级标题######## 标题五级标题########## 标题六级标题############ 标题写法2一级标题===或二级标题---2.3链接功能示例写法插入本地图片(图片描述可不写)![图片描述](图片路径 \”title\”) 或 ![图片描述](图片路径)插入互联网图片(图片描述可不写)![图片描述](图片外链 \”title\”) 或 ![图片描述](图片外链)插入链接\&lt;网址&gt; 或 网址2.4 分割线描述示例写法三个以上的星号(*) 或 减号(-) 或 下划线(_)并回车***或---或___2.5 代码块代码区块的建立是在每行加上4个空格或者一个制表符注意：代码块与普通文本间需要空一行示例：int main(void){printf(&quot;hello world\n&quot;); }效果：123int main(void)&#123; printf("hello world\n");&#125;行内引用代码需要用`引起来(一般在ESC键下面)示例：示例`int a = 0;`效果:效果int a = 0;多行代码与语法高亮,在需要高亮的代码块前一行及后一行使用三个`,就可以了,需要设置语言的话,就在第一行的三个`后面加上语言的名称示例：```c代码块```效果：123int main(void)&#123; printf("hello world\n");&#125;代码块里包含HTML代码在代码区块里面， &amp; 、 &lt; 和 &gt; 会自动转成 HTML 实体，这样的方式让你非常容易使用 Markdown 插入范例用的 HTML 原始码，只需要复制贴上，剩下的 Markdown 都会帮你处理。示例：12345678910111213&lt;table&gt; &lt;tr&gt; &lt;th rowspan="2"&gt;值班人员&lt;/th&gt; &lt;th&gt;1&lt;/th&gt; &lt;th&gt;2&lt;/th&gt; &lt;th&gt;3&lt;/th&gt; &lt;/tr&gt; &lt;/tr&gt; &lt;td&gt;1&lt;/td&gt; &lt;td&gt;2&lt;/td&gt; &lt;td&gt;3&lt;/td&gt; &lt;tr&gt;&lt;/table&gt;效果：值班人员1231232.6 引用基本引用,在被引用的文本前加上&gt;符号，以及一个空格就可以了，如果只输入了一个&gt;符号会产生一个空白的引用。示例：> 文字>> 文字效果：文字文字嵌套引用示例：>>> 1>> 2> 3效果：123引用其他要素,引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等。2.7 列表无序列表使用 *，+，- 表示无序列表。注意：符号后面一定要有一个空格，起到缩进的作用。有序列表使用数字和一个英文句点表示有序列表。注意：英文句点后面一定要有一个空格，起到缩进的作用。混合使用列表不光可以单独使用，也可以使用其他的 Markdown 语法，包括标题、引用、代码区块等。注意：加粗效果不能直接用于列表标题里面，但是可以嵌套在列表里面混合使用。​ 列表中包含代码块（前面加2个tab或者8个空格，并且需要空一行，否则不显示）。​ 在使用列表时，只要是数字后面加上英文的点，就会无意间产生列表，比如2019.3.16 这时候想表达的是日 期，有些软件把它被误认为是列表。解决方式：在每个点前面加上\就可以了。2.8 表格示例：学号|姓名|性别:-|:-|:-小明|男|21小红|女|34或| | |建一个空表效果：学号姓名性别小明男21小红女343.常用技巧3.1 换行方法1: 连续两个以上空格+回车方法2：使用html语言换行标签：3.2 缩进字符不断行的空白格 或 半角的空格 或 全角的空格 或Markdown语法描述示例作用\&amp;#160;或\&nbsp;&#160;123或&nbsp;123缩进半个字符\&amp;#8194;或\&ensp;&#8194;123或&ensp;123缩进一个字符\&amp;#8195;或\&emsp;&#8195;123或&ensp;123缩进两个字符3.3 特殊符号对于 Markdown 中的语法符号，前面加反斜线\即可显示符号本身。其他特殊字符引用方式,特殊字符的HTML码如：\&amp;#10052; &#10052;3.4 字体、字号、颜色Markdown是一种可以使用普通文本编辑器编写的标记语言，通过类似HTML的标记语法，它可以使普通文本内容具有一定的格式。但是它本身是不支持修改字体、字号与颜色等功能的！CSDN-markdown编辑器是其衍生版本，扩展了Markdown的功能（如表格、脚注、内嵌HTML等等）！对，就是内嵌HTML，接下来要讲的功能就需要使用内嵌HTML的方法来实现。字体，字号和颜色编辑如下代码黑体字\&lt;font face=”黑体”>黑体字\&lt;/font>微软雅黑\&lt;font face=”微软雅黑”>微软雅黑\&lt;/font>黑体字\&lt;font color=#0099ff size=7 face=”黑体”>黑体字\&lt;/font>3.5 链接的高级操作参考式链接在文档要插入图片的地方写![图片或网址链接][标记]，在文档的最后写上[标记]:图片地址 “标题”。（最后这个”标题”可以不填写）内容目录在段落中填写 [TOC] 以显示全文内容的目录结构。锚点锚点其实就是页内超链接。比如我这里写下一个锚点，点击回到目录，就能跳转到目录。 在目录中点击这一节，就能跳过来。在你准备跳转到的指定标题后插入锚点{#标记}，然后在文档的其它地方写上连接到锚点的链接。注脚在需要添加注脚的文字后加上脚注名字[^注脚名字],称为加注。 然后在文本的任意位置(一般在最后)添加脚注，脚注前必须有对应的脚注名字(格式[^注脚名字]:)。3.6 背景色Markdown本身不支持背景色设置，需要采用内置html的方式实现：借助 table, tr, td 等表格标签的 bgcolor 属性来实现背景色的功能。举例如下：12345&lt;table&gt; &lt;tr&gt; &lt;td bgcolor=orange&gt;背景色是：orange&lt;/td&gt; &lt;/tr&gt;&lt;/table&gt;背景色是：orange3.7 emoji表情emoji表情使用:EMOJICODE:的格式，详细列表可见https://www.webpagefx.com/tools/emoji-cheat-sheet/当然现在很多markdown工具或者网站都不支持。示例：: smile :(空格去掉):smile:4. 高端用法4.1 LaTeX数学公式行内公式：使用两个”$”符号引用公式:$公式$行间公式：使用两对“$$”符号引用公式：$$公式$$具体可以参考 markdown编辑器使用LaTex数学公式（https://link.jianshu.com/?t=http%3A%2F%2Fblog.csdn.net%2Ftestcs_dn%2Farticle%2Fdetails%2F44229085）latex数学符号详见：常用数学符号的 LaTeX 表示方法4.2 流程图```flowst=&gt;start: 开始:&gt;http://www.baidu.comopl=&gt;operation: My Operationc=&gt;condition: Yes or No?e=&gt;end: 结束st(right)-&gt;opl-&gt;cc(yes)-&gt;ec(no)-&gt;opl```1234567st=&gt;start: 开始:&gt;http://www.baidu.comopl=&gt;operation: My Operationc=&gt;condition: Yes or No?e=&gt;end: 结束st(right)-&gt;opl-&gt;cc(yes)-&gt;ec(no)-&gt;opl4.3 Todo表示例： 描述1- [X] 描述1[ ] 描述1[x] 描述14.4 绘制 序列图```sequenceAlice-&gt;Bob: hello Bob,how are you?Note right of Bob: Bob thinksBob–&gt;Alice: I am thanks!```123Alice-&gt;Bob: hello Bob,how are you?Note right of Bob: Bob thinksBob--&gt;Alice: I am thanks!4.5 绘制 甘特图参考链接]]></content>
       <categories>
         <category>Markdown</category>
@@ -13,12 +24,18 @@
   </entry>
   <entry>
     <title><![CDATA[linux01]]></title>
-    <url>%2Fcjtalctzt0001qcfdc5ja6h2c%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <url>%2Fcjtao2eg20003o8fdizl5o432%2F</url>
+    <content type="text"><![CDATA[新手需要掌握的Linux命令常见执行Linux命令的格式是这样的：命令名称 [命令参数] [命令对象]命令行参数的长格式与短格式示例| 长格式 | 短格式 || :———-: | :——: || man --help | man -h |查看man自身的帮助信息在命令行中断中输入man manman 命令帮助信息界面中，常用的操作按键及用途| 按键 | 用途 || :——-: | :———————————: || PaGe down | 向下翻一页 || PaGe up | 向上翻一页 || home | 直接前往首页 || end | 直接前往尾页 || / | 从上至下搜索某个关键字，如 “/Linux” || ? | 从下至上搜索某个关键字，如 “?Linux” || n | 定位到下一个搜索到的关键词 || N | 定位到上一个搜索到的关键词 || q | 退出帮助文档 |man 命令帮助信息的结构及意义| 结构名称 | 代表意义 || :———: | :——————–: || NAME | 命令的名称 || SYNOPSIS | 参数的大致使用方法 || DESCRIPTION | 介绍说明 || EXAMPLES | 演示(附带简单说明) || OVERVIEW | 概述 || DEFAULTS | 默认的功能 || OPTIONS | 具体的可用选项(带介绍) || ENVIRONMENT | 环境变量 || FILES | 用到的文件 || SEE ALSO | 相关的资料 || HISTORY | 维护历史与联系方式 |常用系统工作命令echo命令echo 命令用于在终端输出字符串或变量提取后的值，格式为“echo [字符串 | $变量]”。例如，把指定字符串“Linuxprobe.com”输出到终端屏幕的命令为：1[root@linuxprobe ~]# echo Linuxprobe.Com该命令会在终端屏幕上显示如下信息： 1Linuxprobe.Com 下面，我们使用$变量的方式提取变量 SHELL 的值，并将其输出到屏幕上： 1[root@linuxprobe ~]# echo $SHELL /bin/bash date命令date 命令用于显示及设置系统的时间或日期，格式为“date [选项] [+指定的格式]”。date命令中的参数及作用| 参数 | 作用 || :–: | :————: || %t | 跳格(Tab 键) || %H | 小时（00～23） || %I | 小时（00～12） || %M | 分钟（00～59） || %S | 秒（00～59） || %j | 今年中的第几天 |示例：按照默认格式查看当前系统时间的 date 命令如下所示：1[root@linuxprobe ~]# date Mon Aug 24 16:11:23 CST 2017按照“年-月-日 小时:分钟:秒”的格式查看当前系统时间的 date 命令如下所示： 1[root@linuxprobe ~]# date "+%Y-%m-%d %H:%M:%S" 2017-08-24 16:29:12 将系统的当前时间设置为 2017 年 9 月 1 日 8 点 30 分的 date 命令如下所示： 1[root@linuxprobe ~]# date -s "20170901 8:30:00" Fri Sep 1 08:30:00 CST 2017 再次使用 date 命令并按照默认的格式查看当前的系统时间，如下所示： 1[root@linuxprobe ~]# date Fri Sep 1 08:30:01 CST 2017 date 命令中的参数%j 可用来查看今天是当年中的第几天。这个参数能够很好地区分备份时间的新旧，即数字越大，越靠近当前时间。该参数的使用方式以及显示结果如下所示。 1[root@linuxprobe ~]# date "+%j" 244 reboot命令reboot 命令用于重启系统，其格式为 reboot。由于重启计算机这种操作会涉及硬件资源的管理权限，因此默认只能使用 root 管理员来重启，其命令如下：1[root@linuxprobe ~]# rebootpoweroff命令poweroff 命令用于关闭系统，其格式为 poweroff。该命令与 reboot 命令相同，都会涉及硬件资源的管理权限，因此默认只有 root 管理员才可以关闭电脑，其命令如下：1[root@linuxprobe ~]# poweroffwget命令wget 命令用于在终端中下载网络文件，格式为“wget [参数] 下载地址”。wget命令的参数及作用| 参数 | 作用 || :–: | :———————————-: || -b | 后台下载模式 || -P | 下载到指定目录 || -t | 最大尝试次数 || -c | 断点续传 || -p | 下载页面内所有资源，包括图片、视频等 || -r | 递归下载 |PS命令ps 命令用于查看系统中的进程状态，格式为“ps [参数]”。ps命令参数及作用| 参数 | 作用 || :–: | :——————————–: || -a | 显示所有进程（包括其他用户的进程） || -u | 用户以及其他详细信息 || -x | 显示没有控制终端的进程 |Linux 系统中时刻运行着许多进程，如果能够合理地管理它们，则可以优化系统的性能。在Linux 系统中，有 5 种常见的进程状态，分别为运行、中断、不可中断、僵死与停止，其各自含义如下所示。R（运行）：进程正在运行或在运行队列中等待。S（中断）：进程处于休眠中，当某个条件形成后或者接收到信号时，则脱离该状态。D（不可中断）：进程不响应系统异步信号，即便用 kill 命令也不能将其中断。Z（僵死）：进程已经终止，但进程描述符依然存在, 直到父进程调用 wait4()系统函数后将进程释放。T（停止）：进程收到停止信号后停止运行。进程状态| 英文 | 中文注释 || :—–: | :———————-: || USER | 进程所有者 || PID | 进程ID号 || %CPU | 运算器占用率 || %MEM | 内存占用率 || VSZ | 虚拟内存使用量(单位KB) || RSS | 占用的固定内存量(单位KB) || TTY | 所在终端 || STAT | 进程状态 || START | 被启动时间 || TIME | 实际使用CPU的时间 || COMMAND | 命令名称与参数 |]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux学习</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[树莓派安装3.5寸屏幕驱动]]></title>
-    <url>%2Fcjtalcu020005qcfdo3pppulp%2F</url>
+    <url>%2Fcjtao2egc0009o8fd7efyiv36%2F</url>
     <content type="text"><![CDATA[下载屏幕驱动或执行1Git clone https://github.com/qishilmx/Warehouse.git执行12cd LCD-show/sudo ./LCD35-show注意:执行123执行apt-get upgrade会导致LCD无法正常工作需要编辑SD卡中的config.txt文件删除其中的dtoverlay=ads7846设置显示方向执行123cd LCD-show/sudo ./LCD35-show lite XX 可选 0,90,180,270,分别表示旋转相应的度数.]]></content>
       <categories>
         <category>树莓派教程</category>
@@ -29,7 +46,7 @@
   </entry>
   <entry>
     <title><![CDATA[树莓派显示中文]]></title>
-    <url>%2Fcjtalcu0a000bqcfdrwo4d06t%2F</url>
+    <url>%2Fcjtao2egk000eo8fdnyf6bnh9%2F</url>
     <content type="text"><![CDATA[执行sudo apt-get install ttf-wqy-zenhei执行sudo raspi-config选择第四项,然后选择第一项,按方向键下找到zh-CN按空格选中,然后确认,退出配置界&gt;面,然后重启就可以了.]]></content>
       <categories>
         <category>树莓派教程</category>
@@ -40,7 +57,7 @@
   </entry>
   <entry>
     <title><![CDATA[树莓派3B+设置静态IP]]></title>
-    <url>%2Fcjtalctzy0003qcfd4hq7b61u%2F</url>
+    <url>%2Fcjtao2eg90007o8fdhg7x9007%2F</url>
     <content type="text"><![CDATA[执行1sudo vim /etc/dhcpcd.conf在文件末尾添加123456789101112#有线静态ip设置interface eth0static ip_address=192.168.0.53/24 #IPV4的地址static ip6_address=fd51:42f8:caae:d92e::ff/64 #IPV6的地址static routers=192.168.0.1 #网关static domain_name_servers=192.168.0.1 8.8.8.8 fd51:42f8:caae:d92e::1 #DNS#无线静态IP设置interface wlan0static ip_address=192.168.0.53/24 #PV4的地址static ip6_address=fd51:42f8:caae:d92e::ff/64 #IPV6的地址static routers=192.168.0.1 #网关static domain_name_servers=192.168.0.1 8.8.8.8 fd51:42f8:caae:d92e::1 #DNS]]></content>
       <categories>
         <category>树莓派教程</category>
@@ -51,7 +68,7 @@
   </entry>
   <entry>
     <title><![CDATA[树莓派安装系统及简单配置]]></title>
-    <url>%2Fcjtalcu070009qcfd8o4isyjn%2F</url>
+    <url>%2Fcjtao2egf000ao8fds4tn5qgx%2F</url>
     <content type="text"><![CDATA[安装系统第一步下载系统先去官网下载系统,我下载的是Raspbian Stretch Lite版.第一个带桌面与推荐软件,第二个只带桌面,第三个是最简版.第二步格式化SD卡安装系统先下载SD卡格式化工具,然后解压打开软件,在电脑上插入SD,如下图显示,驱动器检测到了SD,驱动器要是空白的点一下旁边的更新,然后点击格式化,会弹出两次确认对话框,都点击确认,然后点击完成后退出软件就可以了.下载Win32DiskImager,点击箭头所指按键找到下载的系统(下载的是压缩包需要先解压),注意箭头指向的图标后面的驱动器要选对,然后点击Write,弹出的对话框点yes,等待完成就可以了.开启ssh上面我们已经把系统装到SD卡了,但是默认树莓派的ssh是未开启的,所以我们需要在SD的根目录下新建ssh文件.新建完ssh文件把卡插到树莓派就行了(第一次开机需要的时间会久一点),需要用网线连接树莓派与电脑,就可以通过putty操作树莓派了,主机名写箭头指向的就可以了,然后点击打开,弹出的对话框点是登录名写pi密码写raspberry简单配置树莓派执行sudo raspi-config进入到下图界面修改密码按方向键选中第一个Change User Password,按回车,根据提示新密码.设置开机自动连接WiFi选择第二项Network options,进入到下一个界面后选择第二个,先选择区域找到china后确认,根据提示输入WiFi名称与密码.扩展SD卡空间在选择第七项Advanced options,选中第一个按两次回车就OK了,修改设备名选择第二项Network options,选择第一项,根据提示修改设备名重启树莓派按Tab键选择Finish回车在命令行输入sudo reboot再次连接树莓派打开putty主机名那可以写你修改后的设备名.local也可以写树莓派连接WiFi后的地址(可以在路由器管理页面查看),注意,电脑与树莓派必须在同一WiFi下.]]></content>
       <categories>
         <category>树莓派教程</category>
